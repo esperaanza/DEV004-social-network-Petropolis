@@ -9,21 +9,19 @@ export const home = () => {
         </picture>
         <div class="form-container-home"> 
                
-          <button class="btnSignIn" id="btnSignIn" onclick="login()" >Iniciar Sesión</button>
-           <a href="/login" class="linkSign" >Iniciar Sesión </a> 
+           <a  href="/login" class="linkSign" >Iniciar Sesión </a> 
             <div class="optionSignIn">
             <hr>
             <p>o</p>
             <hr>
             </div>
             
-            <button class="btnGoogle" id="btnGoogle" type="submit" onclick="signInGoogle()"><img src="./img/BtnGoogle.png">Acceder con
-   Google</button>
-  
-         <div >
-         <p  >No tienes una cuenta?</p> 
-         <button class="btnSignIn" id="btnSignIn" onclick="signInEmailPass()" >Iniciar Sesión</button> 
-         <a href="/registerPage" class="linkSign" > Registrate</a>
+           
+       
+         <a id="h" href="/registerPage" class="linkSign" > Registrate</a>
+         <br>
+         <br>
+         <p  >  AM <img src="./img/HUELLA-PhotoRoom.png"> LOS ANIMALES </p> 
          </div>`;
 
   signInContainer.innerHTML = signInTemplate;
