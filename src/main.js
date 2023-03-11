@@ -5,9 +5,8 @@ import { registerPage } from './components/register.js';
 import { login } from './components/login';
 import { timeline } from './components/timeline';
 
-myFunction();
 const rootDiv = document.getElementById('root');
-
+myFunction();
 // objeto de las rutas
 const routes = {
   '/': home(),
