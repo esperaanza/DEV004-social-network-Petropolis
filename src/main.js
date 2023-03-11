@@ -1,15 +1,28 @@
 // Este es el punto de entrada de tu aplicacion
 import { myFunction } from './lib/index.js';
-import { home } from './components/home';
-import { registerPage } from './components/register';
+import { home } from './components/home.js';
+import { registerPage } from './components/register.js';
+import { login } from './components/login';
+import { timeline } from './components/timeline';
 
 myFunction();
+const rootDiv = document.getElementById('root');
 
+// objeto de las rutas
 const routes = {
-  '/': home,
-  '/register': registerPage,
+  '/': home(),
+  '/registerPage': registerPage(),
+  '/login': login(),
+  '/timeline': timeline(),
 };
 
-const rootDiv = document.getElementById('root');
-const component = routes[window.location.pathname];
-rootDiv.appendChild(component());
+// permite navegar atraves de las ruta
+export const onNavigate = (pathname, paramRoutes = routes) => {
+  window.history.pushState({}, pathname, window.location.origin + pathname);
+  document.getElementById('root').replaceChildren(paramRoutes[pathname]);
+};
+
+// permite utilizar flechas del navegador
+window.onpopstate = () => {
+  rootDiv.replaceChildren(routes[window.location.pathname]);
+};

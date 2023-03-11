@@ -1,31 +1,34 @@
 export const home = () => {
   //* Aqui estamos creando lo que va en HTML.
-  const homeSeccion = document.createElement('seccion');
-  const welcomeHeader = document.createElement('h1');
-  const coverImg = document.createElement('img');
-  const loginButton = document.createElement('button');
-  const signInButton = document.createElement('button');
+  const signInContainer = document.createElement('div');
+  signInContainer.classList.add('container');
 
-  //* Estamos asignandi atributos para todos los elementos creados.
-  homeSeccion.setAttribute('id', 'homeSeccion');
+  const signInTemplate = `
+        <picture>
+          <img id="Logo" src="./img/LogoPetropolisSF.png" alt="logo">
+        </picture>
+        <div class="form-container-home"> //signIn
+          <form class="formContainer"></form>
+          
+            <div>
+            <button class="btnSignIn" id="btnSignIn" onclick="signInEmailPass()" >Iniciar Sesión</button>
+            
+            <div class="optionSignIn">
+            <hr>
+            <p>o</p>
+            <hr>
+            </div>
+            
+            <button class="btnGoogle" id="btnGoogle" type="submit" onclick="signInGoogle()"><img src="./img/BtnGoogle.png">Acceder con
+   Google</button>
+  
+         <div >
+         <p  >No tienes una cuenta?</p> 
+         <button class="btnSignIn" id="btnSignIn" onclick="signInEmailPass()" >Iniciar Sesión</button> 
+         <a href="/signUp" class="linkSign" > Registrate</a>
+         </div>`;
 
-  welcomeHeader.innerHTML = 'Bienvenido';
+  signInContainer.innerHTML = signInTemplate;
 
-  coverImg.setAttribute('id', 'LogoPetropolis');
-  coverImg.setAttribute('src', './Img/LogoPetropolisSF.png');
-  coverImg.setAttribute('alt', 'LogoPetropolis');
-
-  loginButton.setAttribute('id', 'loginButton');
-  loginButton.textContent = 'Iniciar Sesión';
-
-  signInButton.setAttribute('id', 'signInButton');
-  signInButton.textContent = 'Registrarse';
-
-  //* Aqui estamos agregando todo a la sección de SignInPage
-  homeSeccion.appendChild(welcomeHeader);
-  homeSeccion.appendChild(coverImg);
-  homeSeccion.appendChild(loginButton);
-  homeSeccion.appendChild(signInButton);
-
-  return homeSeccion;
+  return signInContainer;
 };
