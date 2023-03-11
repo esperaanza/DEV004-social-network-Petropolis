@@ -8,7 +8,9 @@ export const home = () => {
           <img id="Logo" src="./img/LogoPetropolisSF.png" alt="logo">
         </picture>
         <div class="form-container-home"> //signIn
-          <form class="formContainer"></form>
+          <form class="formContainer"><input class="inputForm" type="email" placeholder="Email" id="inputEmail">
+          <input class="inputForm" type="password" placeholder="Contraseña" id="inputPassword">
+          </form></form>
           
             <div>
             <button class="btnSignIn" id="btnSignIn" onclick="signInEmailPass()" >Iniciar Sesión</button>

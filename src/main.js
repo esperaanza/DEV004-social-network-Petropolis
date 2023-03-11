@@ -25,3 +25,8 @@ export const onNavigate = (pathname, paramRoutes = routes) => {
 window.onpopstate = () => {
   rootDiv.replaceChildren(routes[window.location.pathname]);
 };
+
+window.addEventListener('load', () => {
+  // console.log('rutas', window.location.pathname)
+  onNavigate(window.location.pathname)
+});
