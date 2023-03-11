@@ -28,5 +28,5 @@ window.onpopstate = () => {
 
 window.addEventListener('load', () => {
   // console.log('rutas', window.location.pathname)
-  onNavigate(window.location.pathname)
+  onNavigate(window.location.pathname);
 });
