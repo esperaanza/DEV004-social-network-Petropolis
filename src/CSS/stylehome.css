@@ -14,15 +14,17 @@ img {
   margin-bottom: 5%;
 }
 
-.form-container-signIn {
+.form-container-home {
   flex-direction: column;
   text-align: center;
   font-family: 'Simonetta', cursive;
 }
 
+.h img{
+  width: 20px;
+}
 
 
-.btnSignIn,
 .btnGoogle {
   font-family: 'Simonetta';
   font-weight: bold;
@@ -32,9 +34,9 @@ img {
   border-radius: 15px;
   text-align: center;
   color:  #BF7836;
-  font-size: 1rem;
+  font-size: 0.5rem;
   cursor: pointer;
-  width: 50%;
+  width: 80%;
   background-color: #BF7836;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -45,20 +47,9 @@ img {
   margin-top: 15px;
 }
 
-.btnGoogle {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5%;
-  background-color: transparent;
-  border: solid 2px  #BF7836;
-}
 
-.btnGoogle img {
-  height: 30px;
-  width: 30px;
-  padding: 5% 2% 0 0;
-}
+
+
 
 .optionSignIn {
   display: flex;
@@ -97,16 +88,13 @@ img {
   border: solid 0.3px  #BF7836;
 }
 
-.btnSignIn:hover,
-.btnGoogle:hover {
-  background: dimgray;
+.linkSign:hover {
+  background: hsl(0, 0%, 40%);
   color: #FBF6F0;
 }
 
-.btnSignIn:active,
-.btnGoogle:active {
-  border: 1px solid #FBF6F0;
-}
+
+
 
 @media all and (min-width:768px) {
   body {
@@ -139,7 +127,7 @@ img {
       padding-top: 20px;
   }
 
-  .form-container-signIn {
+  .form-container-home {
       background-color: #BF7836;;
       padding: 2%;
       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -149,9 +137,5 @@ img {
       font-size: 1.3rem;
   }
 
-  .btnSignIn,
-  .btnGoogle {
-      font-size: 1.3rem;
-      width: 55%;
-  }
+  
 }
