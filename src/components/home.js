@@ -9,8 +9,8 @@ export const home = () => {
         </picture>
         <div class="form-container-home"> 
                
-          <button class="btnSignIn" id="btnSignIn" onclick="signInEmailPass()" >Iniciar Sesión</button>
-            
+          <button class="btnSignIn" id="btnSignIn" onclick="login()" >Iniciar Sesión</button>
+           <a href="/login" class="linkSign" >Iniciar Sesión </a> 
             <div class="optionSignIn">
             <hr>
             <p>o</p>
@@ -23,7 +23,7 @@ export const home = () => {
          <div >
          <p  >No tienes una cuenta?</p> 
          <button class="btnSignIn" id="btnSignIn" onclick="signInEmailPass()" >Iniciar Sesión</button> 
-         <a href="/signUp" class="linkSign" > Registrate</a>
+         <a href="/registerPage" class="linkSign" > Registrate</a>
          </div>`;
 
   signInContainer.innerHTML = signInTemplate;

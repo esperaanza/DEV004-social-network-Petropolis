@@ -31,7 +31,7 @@ img {
   height: 8vh;
   border-radius: 15px;
   text-align: center;
-  color: dimgray;
+  color:  #BF7836;
   font-size: 1rem;
   cursor: pointer;
   width: 50%;
@@ -51,7 +51,7 @@ img {
   align-items: center;
   margin-bottom: 5%;
   background-color: transparent;
-  border: solid 2px dimgray;
+  border: solid 2px  #BF7836;
 }
 
 .btnGoogle img {
@@ -71,12 +71,19 @@ img {
   font-weight: bold;
 }
 
-.linkSign,
+.linkSign{
+  font-family: 'Simonetta', cursive;
+  font-weight: bold;
+  color: rgb(250, 246, 246);
+  padding: 10px;
+  background: #BF7836;
+}
 .optionSignIn p {
   font-family: 'Simonetta', cursive;
   font-weight: bold;
-  color: dimgray;
+  color: rgb(250, 246, 246);
   padding: 10px;
+  
 }
 
 .registrationLink p {
@@ -87,7 +94,7 @@ img {
 .optionSignIn hr {
   font-family: 'Simonetta', cursive;
   width: 30%;
-  border: solid 0.3px dimgray;
+  border: solid 0.3px  #BF7836;
 }
 
 .btnSignIn:hover,
