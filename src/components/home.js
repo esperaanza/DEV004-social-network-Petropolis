@@ -8,20 +8,19 @@ export const home = () => {
           <img id="Logo" src="./img/LogoPetropolisSF.png" alt="logo">
         </picture>
         <div class="form-container-home"> 
-               
-           <a  href="/login" class="linkSign" >Iniciar Sesión </a> 
+        <form class="formContainer">     
+           <a  href="/login" class="linkSign" >Inicia Sesión </a> 
             <div class="optionSignIn">
             <hr>
             <p>o</p>
             <hr>
             </div>
-            
-           
-       
-         <a id="h" href="/registerPage" class="linkSign" alt="h" > Registrate</a>
+             
+         <a href="/registerPage" class="linkSign"  > Registrate</a>
+        </form>
          <br>
          <br>
-         <p  >  AM <img src="./img/HUELLA-PhotoRoom.png"> LOS ANIMALES </p> 
+         <p  >  AM <img src="./img/HUELLA-PhotoRoom.png" alt="h"> LOS ANIMALES </p> 
          </div>`;
 
   signInContainer.innerHTML = signInTemplate;

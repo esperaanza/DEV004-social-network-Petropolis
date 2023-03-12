@@ -8,7 +8,7 @@ export const login = () => {
       </picture>
       <div class="form-container-signIn">
         <form class="formContainer">
-          <input class="inputForm" type="email" placeholder="Email" id="inputEmail">
+          <input class="inputForm" type="email" placeholder="Nombre o Email" id="inputEmail">
           <input class="inputForm" type="password" placeholder="Contraseña" id="inputPassword">
           </form>
           <div>
