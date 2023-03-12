@@ -18,7 +18,7 @@ export const home = () => {
             
            
        
-         <a id="h" href="/registerPage" class="linkSign" > Registrate</a>
+         <a id="h" href="/registerPage" class="linkSign" alt="h" > Registrate</a>
          <br>
          <br>
          <p  >  AM <img src="./img/HUELLA-PhotoRoom.png"> LOS ANIMALES </p> 
