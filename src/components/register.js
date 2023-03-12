@@ -4,7 +4,7 @@ export const registerPage = () => {
 
   const signUpTemplate = `
   <picture>
-    <img id="logo" src="./images/logo2.png" alt="logo">
+    <img id="logo" src="./img/LogoPetropolisSF.png" alt="logo">
   </picture>
   <div class="form-container-register">
     <h1 class="formTittle">Ingresa tus datos</h1>
